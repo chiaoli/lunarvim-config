@@ -59,4 +59,8 @@ lvim.plugins = {
       require("nvim-ts-autotag").setup()
     end,
   },
+  {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+  },
 }
