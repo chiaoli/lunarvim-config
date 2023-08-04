@@ -37,4 +37,5 @@ lvim.plugins = {
       end, opts)
     end,
   },
+  { "towolf/vim-helm" },
 }
