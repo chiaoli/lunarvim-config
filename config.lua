@@ -5,3 +5,4 @@
 reload("user.options")
 reload("user.plugins")
 reload("user.which-key")
+reload("user.keymaps")
