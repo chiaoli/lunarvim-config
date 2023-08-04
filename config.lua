@@ -4,3 +4,4 @@
 -- Discord: https://discord.com/invite/Xb9B4Ny
 reload("user.options")
 reload("user.plugins")
+reload("user.which-key")
