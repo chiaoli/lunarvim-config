@@ -29,12 +29,19 @@ lvim.plugins = {
       -- vim.api.nvim_set_keymap("n", "S", ":HopWord<cr>", { silent = true })
       vim.keymap.set("n", "s", ":HopChar1<cr>", opts)
       vim.keymap.set("n", "S", ":HopWord<cr>", opts)
-      vim.keymap.set("n", "f", function()
+      vim.keymap.set("", "f", function()
         hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
-      end, opts)
-      vim.keymap.set("n", "F", function()
+      end, { remap = true })
+      vim.keymap.set("", "F", function()
         hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true })
-      end, opts)
+      end, { remap = true })
+      vim.keymap.set("", "t", function()
+        hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true, hint_offset = -1 })
+      end, { remap = true })
+      vim.keymap.set("", "T", function()
+        hop.hint_char1({ direction = directions.BEFORE_CURSOR, current_line_only = true, hint_offset = 1 })
+      end, { remap = true })
+      vim.keymap.set("x", "f", "<cmd>HopLine<cr>", opts)
     end,
   },
   { "towolf/vim-helm" },
