@@ -14,3 +14,8 @@ lvim.builtin.which_key.mappings["t"] = {
   l = { "<cmd>TroubleToggle loclist<cr>", "loclist" },
   r = { "<cmd>TroubleToggle lsp_references<cr>", "references" },
 }
+
+lvim.builtin.which_key.mappings["j"] = {
+  "<cmd>TSJToggle<cr>",
+  "TreeSJ Toggle",
+}
