@@ -187,4 +187,15 @@ lvim.plugins = {
       -- refer to the configuration section below
     }
   },
+  -- Claude Code integration for AI-powered development
+  {
+    "coder/claudecode.nvim",
+    lazy = false,
+    config = function()
+      require("claudecode").setup({
+        -- Claude Code configuration
+        -- Leave empty for default settings
+      })
+    end,
+  },
 }
