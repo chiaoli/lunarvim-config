@@ -19,3 +19,15 @@ lvim.builtin.which_key.mappings["j"] = {
   "<cmd>TSJToggle<cr>",
   "TreeSJ Toggle",
 }
+
+lvim.builtin.which_key.mappings["a"] = {
+  name = "AI/Claude Code",
+  c = { "<cmd>ClaudeCode<cr>", "Toggle Claude" },
+  f = { "<cmd>ClaudeCodeFocus<cr>", "Focus Claude" },
+  r = { "<cmd>ClaudeCode --resume<cr>", "Resume Claude" },
+  C = { "<cmd>ClaudeCode --continue<cr>", "Continue Claude" },
+  b = { "<cmd>ClaudeCodeAdd %<cr>", "Add current buffer" },
+  s = { "<cmd>ClaudeCodeSend<cr>", "Send to Claude" },
+  a = { "<cmd>ClaudeCodeDiffAccept<cr>", "Accept diff" },
+  d = { "<cmd>ClaudeCodeDiffDeny<cr>", "Deny diff" },
+}
