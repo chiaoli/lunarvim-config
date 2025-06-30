@@ -104,7 +104,7 @@ lvim.plugins = {
       vim.g.go_gopls_enabled = 0
       vim.g.go_code_completion_enabled = 0
       vim.g.go_def_mapping_enabled = 0
-      
+
       -- Enable useful vim-go features
       vim.g.go_highlight_types = 1
       vim.g.go_highlight_fields = 1
@@ -113,15 +113,15 @@ lvim.plugins = {
       vim.g.go_highlight_operators = 1
       vim.g.go_highlight_extra_types = 1
       vim.g.go_highlight_build_constraints = 1
-      
+
       -- Use gofumpt for formatting
       vim.g.go_fmt_command = "gofumpt"
       vim.g.go_fmt_autosave = 1
-      
+
       -- Test settings
       vim.g.go_test_show_name = 1
       vim.g.go_test_timeout = "30s"
-      
+
       -- Disable template features that might conflict
       vim.g.go_template_autocreate = 0
     end,
@@ -190,6 +190,7 @@ lvim.plugins = {
   -- Claude Code integration for AI-powered development
   {
     "coder/claudecode.nvim",
+    dependencies = { "folke/snacks.nvim" },
     lazy = false,
     config = function()
       require("claudecode").setup({
