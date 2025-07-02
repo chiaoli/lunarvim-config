@@ -31,3 +31,10 @@ lvim.builtin.which_key.mappings["a"] = {
   a = { "<cmd>ClaudeCodeDiffAccept<cr>", "Accept diff" },
   d = { "<cmd>ClaudeCodeDiffDeny<cr>", "Deny diff" },
 }
+
+lvim.builtin.which_key.mappings["m"] = {
+  name = "Markdown",
+  t = { "<cmd>RenderMarkdown toggle<cr>", "Toggle Markdown Rendering" },
+  e = { "<cmd>RenderMarkdown enable<cr>", "Enable Markdown Rendering" },
+  d = { "<cmd>RenderMarkdown disable<cr>", "Disable Markdown Rendering" },
+}
